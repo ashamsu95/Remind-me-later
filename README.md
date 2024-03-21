@@ -23,4 +23,21 @@ Remind-me-later is a web application designed to allow users to set up reminders
 4. Choose whether to receive the reminder via SMS or Email.
 5. Click "Set Reminder" to save your reminder.
 
-## Installation
+# Remind-me-later API Endpoints
+
+## User Registration
+
+### Request POST
+
+#### URL http://127.0.0.1:8000/user/register/
+
+#### Body
+
+The request body should contain a JSON object with the following fields:
+
+- **username**: (string) The username for the new user. Required.
+- **email**: (string) The email address for the new user. Required.
+- **password**: (string) The password for the new user. Required.
+- **phone_number**: (string, optional) The phone number for the new user. If provided, must be a string with a maximum length of 15 characters.
+
+### Example Request Body
